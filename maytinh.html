@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        margin: auto;
+    }
+    .huy1{
+        margin: 20%;
+        padding: 20px;
+    }
+    .huy2{
+        margin: 20%;
+        padding: 20px;
+    }
+    .huy3{
+        margin-top: -100px;
+        margin-left: 50px;
+        padding: 10px;
+        width: 200px;
+    }
+    .huy4{
+        margin-top: -100px;
+        margin-left: 50px;
+        padding: 10px;
+        width: 200px;
+    }
+    h3{
+        font-size: 30px;
+        margin-left: 70px;
+    }
+    #result{
+        font-size: 30px;
+        margin-left: 70px;
+    }
+
+</style>
+<body style="margin:auto ; padding: auto; text-align: center;">
+    
+    <table>
+        <tr class="huy">
+            <th><input class="huy1" type="number" id="num1" placeholder="Nhập số thứ nhất" ></th>
+            <th><input class="huy2" type="number" id="num2" placeholder="Nhập số thứ hai" ></th>
+        </tr>
+        <tr id="pheptinh">
+            <td ><button class="huy3" onmouseout="Add()" >Cộng</button></td>
+            <td><button class="huy4" onclick="Sub()" >Trừ</button></td>
+        </tr>
+    </table>
+    <h3>Result:</h3>
+    <div id="result">Đây là kết quả</div>
+</body>
+</html>
+<script>
+    
+    function Add() {
+        let number1 = + document.getElementById("num1").value;
+        let number2 = + document.getElementById("num2").value;
+        let result = number1 + number2;
+        document.getElementById("result").innerHTML = result;
+    }
+    function Sub() {
+        let number1 = + document.getElementById("num1").value;
+        let number2 = + document.getElementById("num2").value;
+        let result = number1 - number2;
+        document.getElementById("result").innerHTML = result;
+    }
+    
+   
+</script>
